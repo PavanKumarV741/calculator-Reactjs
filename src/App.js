@@ -17,7 +17,7 @@ function App() {
 
   const calculate= ()=>{
     try{
-      setresult(eval(result).toString())
+      setresult(eval(result))
     }
     catch(err){
       console.log(err)
@@ -28,12 +28,12 @@ function App() {
         <div className='cal'>
           <h2>Calculator</h2>
             <form className='inputfield'>
-            <input type="text" value={result} />
+            <input type="text" value={result} placeholder="=" />
             </form>
             <br/>
             <div className="keypad">
 
-            <div>
+            <div className='clear_backspace'>
             <button className='highlighted' onClick={clear}>Clear</button>
             <button  className='highlighted' onClick={backspace}>Delete</button>
             <div/>
