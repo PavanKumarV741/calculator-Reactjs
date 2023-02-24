@@ -64,5 +64,6 @@ input{
   .cal{
     width: max-content;
     justify-content: center;
+    margin:auto
   }
 }
