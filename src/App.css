@@ -30,6 +30,11 @@ button{
   box-shadow: 1px 1px 4px 4px rgba(0, 0, 0, 0.89);
 }
 
+.keypadbuttons{
+  display: flex;
+  flex-direction: column;
+}
+
 input{
   padding: 15px 20px;
   border: 2px solid;
